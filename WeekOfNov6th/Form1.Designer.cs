@@ -47,7 +47,9 @@
             this.btn_dis = new System.Windows.Forms.Button();
             this.box_intome = new System.Windows.Forms.CheckBox();
             this.box_kitomi = new System.Windows.Forms.CheckBox();
-            this.button4 = new System.Windows.Forms.Button();
+            this.btn_dis2 = new System.Windows.Forms.Button();
+            this.btn_file = new System.Windows.Forms.Button();
+            this.btn_fileskip = new System.Windows.Forms.Button();
             this.grpTempConverter.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -258,23 +260,45 @@
             this.box_kitomi.Text = "Kilometers to Miles";
             this.box_kitomi.UseVisualStyleBackColor = true;
             // 
-            // button4
+            // btn_dis2
             // 
-            this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.Location = new System.Drawing.Point(846, 287);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(75, 31);
-            this.button4.TabIndex = 19;
-            this.button4.Text = "button4";
-            this.button4.UseVisualStyleBackColor = true;
-            this.button4.Click += new System.EventHandler(this.button4_Click);
+            this.btn_dis2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_dis2.Location = new System.Drawing.Point(846, 287);
+            this.btn_dis2.Name = "btn_dis2";
+            this.btn_dis2.Size = new System.Drawing.Size(75, 31);
+            this.btn_dis2.TabIndex = 19;
+            this.btn_dis2.Text = "button4";
+            this.btn_dis2.UseVisualStyleBackColor = true;
+            this.btn_dis2.Click += new System.EventHandler(this.button4_Click);
+            // 
+            // btn_file
+            // 
+            this.btn_file.Location = new System.Drawing.Point(846, 372);
+            this.btn_file.Name = "btn_file";
+            this.btn_file.Size = new System.Drawing.Size(80, 24);
+            this.btn_file.TabIndex = 20;
+            this.btn_file.Text = "Load file";
+            this.btn_file.UseVisualStyleBackColor = true;
+            this.btn_file.Click += new System.EventHandler(this.btn_file_Click);
+            // 
+            // btn_fileskip
+            // 
+            this.btn_fileskip.Location = new System.Drawing.Point(584, 372);
+            this.btn_fileskip.Name = "btn_fileskip";
+            this.btn_fileskip.Size = new System.Drawing.Size(103, 50);
+            this.btn_fileskip.TabIndex = 21;
+            this.btn_fileskip.Text = "list every couple words";
+            this.btn_fileskip.UseVisualStyleBackColor = true;
+            this.btn_fileskip.Click += new System.EventHandler(this.btn_fileskip_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1061, 648);
-            this.Controls.Add(this.button4);
+            this.Controls.Add(this.btn_fileskip);
+            this.Controls.Add(this.btn_file);
+            this.Controls.Add(this.btn_dis2);
             this.Controls.Add(this.box_kitomi);
             this.Controls.Add(this.box_intome);
             this.Controls.Add(this.btn_dis);
@@ -322,7 +346,9 @@
         private System.Windows.Forms.Button btn_dis;
         private System.Windows.Forms.CheckBox box_intome;
         private System.Windows.Forms.CheckBox box_kitomi;
-        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button btn_dis2;
+        private System.Windows.Forms.Button btn_file;
+        private System.Windows.Forms.Button btn_fileskip;
     }
 }
 
